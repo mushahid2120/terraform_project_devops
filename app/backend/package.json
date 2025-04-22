@@ -1,0 +1,21 @@
+{
+  "name": "node-mongodb",
+  "version": "1.0.0",
+  "description": "First time doing node js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.788.0",
+    "@aws-sdk/lib-dynamodb": "^3.789.0",
+    "aws-sdk": "^2.1692.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0",
+    "mysql2": "^3.14.0",
+    "path": "^0.12.7"
+  }
+}
