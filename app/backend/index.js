@@ -24,8 +24,8 @@ app.use(express.json());
 // Connect to MongoDB once on server startup
 const connection = mysql.createConnection({
   host: dbEndpoint,  // <- Your RDS endpoint
-  user: 'root',                                // <- Your DB username
-  password: 'redhat',                     // <- Your DB password
+  user: 'admin',                                // <- Your DB username
+  password: 'redhat123',                     // <- Your DB password
   database: 'mysql',               // <- The DB you created
   port: 3306                                     // Default MySQL port
 });
