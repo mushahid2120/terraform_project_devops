@@ -7,12 +7,12 @@ export default defineConfig({
   server: {
     proxy: {
       '/submit': {
-        target: 'http://localhost:4000',
+        target: `http://${process.env.ALB_ENDPOINT}:${process.env.ALB_ENDPOINT}`,
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/submit/, '/submit'),
       },
       '/fetch': {
-        target: 'http://localhost:4000',
+        target: `http://${process.env.ALB_ENDPOINT}:${process.env.ALB_ENDPOINT}`,
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/fetch/, '/fetch'),
       },
