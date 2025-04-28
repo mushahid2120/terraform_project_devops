@@ -11,6 +11,7 @@ const { measureMemory } = require('vm');
 const publicPath = path.join(__dirname, 'public');
 const app = express();
 const port = 4000;
+const dbEndpoint = process.env.RDS_ENDPOINT;
 
 
 
@@ -22,7 +23,7 @@ app.use(express.json());
 
 // Connect to MongoDB once on server startup
 const connection = mysql.createConnection({
-  host: 'localhost',  // <- Your RDS endpoint
+  host: dbEndpoint,  // <- Your RDS endpoint
   user: 'root',                                // <- Your DB username
   password: 'redhat',                     // <- Your DB password
   database: 'mysql',               // <- The DB you created
