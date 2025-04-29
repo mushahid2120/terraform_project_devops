@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     'host': true,
     allowedHosts: [
-      `process.env.FRONTEND_LB_ENDPOINT`,  
+      `${process.env.FRONTEND_LB_ENDPOINT}`,  
     ],
     proxy: {
       '/submit': {
