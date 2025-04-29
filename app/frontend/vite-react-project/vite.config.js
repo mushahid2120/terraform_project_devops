@@ -6,6 +6,9 @@ export default defineConfig({
   plugins: [react()],
   server: {
     'host': true,
+    allowedHosts: [
+      `process.env.FRONTEND_LB_ENDPOINT`,  
+    ],
     proxy: {
       '/submit': {
         target: `http://${process.env.ALB_ENDPOINT}`,
