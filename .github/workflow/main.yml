@@ -1,8 +1,0 @@
-name: GitHub Actions Demo
-on: [push]
-jobs:
-  Testing:
-    runs-on: myrunner
-    steps:
-      - name: testing
-        run: echo "Hellow World "
