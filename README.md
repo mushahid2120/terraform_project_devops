@@ -2,6 +2,9 @@
 
 This repository contains Terraform code to provision a full 3-tier architecture on AWS. It uses Terraform modules to deploy the network (VPC), compute (EC2), database (RDS), and load balancers with auto scaling in a scalable and reusable manner.
 
+
+![3TierArch](https://github.com/user-attachments/assets/8bc838a0-6853-4025-a833-3fc79588d568)
+
 ---
 
 ## ⚙️ Stack Overview
